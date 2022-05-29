@@ -1,0 +1,141 @@
+.loginmain{
+display: flex;
+}
+.logindata{
+width: 50%;
+padding: 20px 35px;
+}
+.logoimg{
+    text-decoration: none;
+        margin-bottom: 75px;
+    display: block;
+}
+.logoimg img{
+width: 258px;
+}
+form{
+    margin-top: 20px;
+}
+h2{
+font-weight: 700 !important;
+font-size: 32px !important;
+letter-spacing: 0.5px !important;
+color: #1F2A39 !important;
+}
+p{
+font-weight: 400 !important;
+font-size: 16px !important;
+letter-spacing: 0.5px !important;
+color: #1F2A39 !important;
+max-width: 705px;
+}
+a{
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.5px;
+text-decoration-line: underline;
+color: #58A4A6 !important;
+}
+button{
+background: #304857;
+border-radius: 2px !important;
+font-weight: 700;
+font-size: 16px !important;
+text-align: center;
+letter-spacing: 0.5px !important;
+color: #FFFFFF;
+border: 0px;
+padding: 8px 100px;
+margin: 30px 0 18px !important;
+
+}
+.loginimg
+{
+width: 50%;
+}
+.loginimg img{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
+}
+.form-control{
+    background: #FFFFFF !important;
+border-radius: 1px !important;
+padding: 16px !important;
+font-weight: 500 !important;
+font-size: 14px !important;
+letter-spacing: 0.5px !important;
+color: #9AA6B9 !important;
+max-width: 450px;
+}
+.form-floating>label{
+    font-weight: 500 !important;
+font-size: 14px !important;
+letter-spacing: 0.5px !important;
+color: #9AA6B9 !important;
+padding: 16px !important;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0px !important;
+}
+@media(max-width:1400px)
+{
+.logoimg{
+        margin-bottom: 40px;
+}
+.logoimg img{
+    width: 190px;
+}
+h2{
+    font-size: 26px !important;
+}
+p{
+    font-size: 14px !important;
+    max-width: 415px;
+}
+.form-control {
+    padding: 10px !important;
+    padding: 19px 10px 11px 10px !important;
+    max-width: 326px;
+}
+.form-floating>label{
+    padding: 10px !important;
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    height: calc(2.5rem + 8px) !important;
+}
+.form-check-label{
+    font-size: 14px !important;
+}
+a{
+    font-size: 14px;
+}
+button{
+    font-size: 14px !important;
+}
+form .mb-3{
+    margin-bottom: 6px !important;
+}
+form .form-check{
+    margin-bottom: 15px !important;
+}
+}
+@media(max-width:768px){
+    .loginmain{
+        flex-wrap: wrap;
+    }
+    .logindata{
+        width: 100%;
+    }
+    .loginimg{
+        display: none;
+    }
+    p{
+        max-width: 100%;
+    }
+}
