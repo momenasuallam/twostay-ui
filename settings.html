@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link href="assets/css/basic.css" rel="stylesheet">
+  <link href="assets/css/settings.css" rel="stylesheet">
+  <!-- bootstrap CSS file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="s-layout">
+    <!-- Sidebar -->
+    <div class="s-layout__sidebar">
+      <a class="s-sidebar__trigger" href="#">
+        <img src="./assets/images/logo.svg" />
+      </a>
+      <nav class="s-sidebar__nav">
+        <ul>
+          <li>
+            <a class="s-sidebar__nav-link" href="./my-account.html">
+              <img src="./assets/images/profile.svg" />
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="./networking.html">
+              <img src="./assets/images/networking.svg" />
+              <h2>Networking</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="./buymore.html">
+              <img src="./assets/images/invoice.svg" />
+              <h2>Invoices</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link active" href="./settings.html">
+              <img src="./assets/images/settings.svg" />
+              <h2>Settings</h2>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <main class="s-layout__content">
+
+      <!-- Profile section -->
+      <div class="profilesection">
+        <div class="profilepic">
+          <img src="./assets/images/img.png" />
+        </div>
+        <div class="profiledetails">
+          <h2>Anastasiia Honcharova</h2>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label switchlbl" for="flexSwitchCheckChecked">Open for projects</label>
+          </div>
+          <div class="popover__wrapper">
+            <a href="0#">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked2">
+                <label class="form-check-label switchlbl" for="flexSwitchCheckChecked2">Private profile</label>
+              </div>
+            </a>
+            <div class="popover__content">
+              <p class="popover__message">Your profile is private and cannot be seen by others. You want to connect with
+                likeminded Twostayers and be visible? Make your profile public and get connected.</p>
+              <img src="./assets/images/close.svg" />
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Edit main info -->
+       <div class="maininfo">
+        <h2>Edit main info</h2>
+         <div class="maininfodata">
+           <div class="row">
+             <div class="col-md-6">
+                 <div class="form-floating mb-3">
+          <!-- "is-invalid" this class use for validation -->
+          <input type="text" class="form-control" id="floatingfname" placeholder="first name" />
+          <label for="floatingfname">First name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <!-- "is-invalid" this class use for validation -->
+          <input type="text" class="form-control" id="floatinglname" placeholder="last name" />
+          <label for="floatinglname">Last name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <!-- "is-invalid" this class use for validation -->
+          <input type="text" class="form-control" id="floatingcity" placeholder="city" />
+          <label for="floatingcity">City</label>
+        </div>
+             </div>
+             <div class="col-md-6">
+               <div class="form-floating mb-3">
+          <!-- "is-invalid" this class use for validation -->
+          <input type="text" class="form-control" id="floatingProfession" placeholder="Profession" />
+          <label for="floatingProfession">Profession</label>
+        </div>
+        <div class="form-floating floatselect mb-3">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option value="1" selected>Space</option>
+            <option value="2">Space</option>
+            <option value="3">Space</option>
+          </select>
+          <label for="floatingSelect" class="formlabelselect1">Select</label>
+        </div>
+             </div>
+           </div>
+         </div>
+      </div>
+
+      <!-- change password -->
+        <div class="changepass">
+        <h2>Change password</h2>
+         <div class="changepassdata">
+           <div class="row">
+             <div class="col-md-6">
+                 <div class="form-floating mb-3">
+          <!-- "is-invalid" this class use for validation -->
+          <input type="password" class="form-control" id="floatingpas" placeholder="New password" />
+          <label for="floatingpas">New password</label>
+        </div>
+        <div class="form-floating mb-3 ">
+          <input type="password" class="form-control" id="floatingnewpass" placeholder="Confirm new password" />
+          <label for="floatingnewpass">Confirm new password</label>
+        </div>
+             </div>
+             <div class="col-md-6">
+              
+             </div>
+           </div>
+         </div>
+      </div>
+
+      <!-- logout button -->
+      <div class="logoutbutton">
+          <button type="submit" class="btnprioutline">Log out</button>
+      </div>
+
+    
+
+    </main>
+
+  </div>
+
+   <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

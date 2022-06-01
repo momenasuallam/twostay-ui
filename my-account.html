@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+  <link href="assets/css/basic.css" rel="stylesheet">
+  <link href="assets/css/my-account.css" rel="stylesheet">
+  <!-- bootstrap CSS file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="s-layout">
+    <!-- Sidebar -->
+    <div class="s-layout__sidebar">
+      <a class="s-sidebar__trigger" href="#">
+        <img src="./assets/images/logo.svg" />
+      </a>
+      <nav class="s-sidebar__nav">
+        <ul>
+          <li>
+            <a class="s-sidebar__nav-link active" href="./my-account.html">
+              <img src="./assets/images/profile.svg" />
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="./networking.html">
+              <img src="./assets/images/networking.svg" />
+              <h2>Networking</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="./buymore.html">
+              <img src="./assets/images/invoice.svg" />
+              <h2>Invoices</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="./settings.html">
+              <img src="./assets/images/settings.svg" />
+              <h2>Settings</h2>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <main class="s-layout__content">
+
+      <!-- Register now section -->
+      <div class="registernow">
+        <div class="regcontent">
+          <h2>Hello, cowoker!</h2>
+          <p>Get a fresh mind on our Community Hike at Lake Tegernsee!</p>
+        </div>
+        <div class="regbutton">
+          <a class="btnpri" href="./signup.html">Register now</a>
+        </div>
+      </div>
+
+      <!-- Profile section -->
+      <div class="profilesection">
+        <div class="profilepic">
+          <img src="./assets/images/img.png" />
+        </div>
+        <div class="profiledetails">
+          <h2>Anastasiia Honcharova</h2>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label switchlbl" for="flexSwitchCheckChecked">Open for projects</label>
+          </div>
+
+
+          <div class="popover__wrapper">
+            <a href="0#">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked2">
+                <label class="form-check-label switchlbl" for="flexSwitchCheckChecked2">Private profile</label>
+              </div>
+            </a>
+            <div class="popover__content">
+              <p class="popover__message">Your profile is private and cannot be seen by others. You want to connect with
+                likeminded Twostayers and be visible? Make your profile public and get connected.</p>
+              <img src="./assets/images/close.svg" />
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- My passes section -->
+
+      <div class="mypasses">
+        <h2>My passes</h2>
+        <div class="mypassescontent">
+          <p>You don’t have any passes for now</p>
+          <a href="#" class="btnpri">Buy passes</a>
+        </div>
+      </div>
+
+      <!-- My badges section -->
+      <div class="mybadges">
+        <h2>My Badges</h2>
+        <div class="mybadgescontent">
+          <p>You don’t have any badges for now</p>
+          <a href="#" class="btnpri">Unlock badges</a>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Recently active Twostayers -->
+
+    <div class="sideprofile">
+      <h2>Recently active Twostayers</h2>
+      <div class="avatardetails">
+        <div class="profileinfo">
+          <div class="avaterimg">
+            <img src="./assets/images/Avatar.png" alt="">
+          </div>
+          <div class="metainfo">
+            <h3>Stephanie Heiß</h3>
+            <div><img src="./assets/images/map.svg" alt=""><span>Munich</span></div>
+            <div><img src="./assets/images/open-arm.svg" alt="">
+              <h6>Open for projects</h6>
+            </div>
+          </div>
+        </div>
+        <div class="chatbtn">
+          <a href="#" class="btnprioutline">Chat</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
