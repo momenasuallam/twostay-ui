@@ -1,68 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>signup page</title>
-    <link href="assets/css/basic.css" rel="stylesheet" />
-    <link href="assets/css/signup.css" rel="stylesheet" />
-    <!-- bootstrap CSS file -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section class="signupmain">
-      <div class="signupdata">
-        <a href="#" class="logoimg"><img src="./assets/images/logo.svg" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>signup page</title>
+  <link href="assets/css/basic.css" rel="stylesheet" />
+  <link href="assets/css/signup.css" rel="stylesheet" />
+  <!-- bootstrap CSS file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
 
-        <h2>Sign up</h2>
-        <p>
-          Welcome to Twostay's community area. You can login with your e-mail
-          address and password here if you are a member of the Twostay
-          community. If you just bought a pass and don't have a password yet,
-          <a href="#">click here</a> to assign a new password.
-        </p>
-        <div>
-          <ul id="progressbar">
-            <li class="active"></li>
-            <li></li>
-          </ul>
+<body>
+  <section class="signupmain">
+    <div class="signupdata">
+      <a href="#" class="logoimg"><img src="./assets/images/logo.svg" /></a>
+
+      <h2>Sign up</h2>
+      <p>
+        Welcome to Twostay's community area. You can login with your e-mail
+        address and password here if you are a member of the Twostay
+        community. If you just bought a pass and don't have a password yet,
+        <a href="#">click here</a> to assign a new password.
+      </p>
+      <div>
+        <ul id="progressbar">
+          <li class="active"></li>
+          <li></li>
+        </ul>
+      </div>
+      <form>
+        <div class="form-floating mb-3">
+          <!-- "is-invalid" this class use for validation -->
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+          <label for="floatingInput">Email</label>
         </div>
-        <form>
-          <div class="form-floating mb-3">
-            <!-- "is-invalid" this class use for validation -->
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Email</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Password</label>
-          </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+          <label for="floatingPassword">Password</label>
+        </div>
 
-          <button type="submit">Next</button>
-          <p>Already have an account? <a href="#">Log in</a></p>
-        </form>
-      </div>
-      <div class="signupimg">
-        <img src="./assets/images/cover1.png" />
-      </div>
-    </section>
+        <button type="submit">Next</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </div>
+    <div class="signupimg">
+      <img src="./assets/images/cover1.png" />
+    </div>
+  </section>
+</body>
 
-    <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
-  </body>
 </html>
