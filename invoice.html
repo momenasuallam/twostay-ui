@@ -12,7 +12,52 @@
 </head>
 
 <body>
-   <div id="invoiceholder">
+  <div class="s-layout">
+    <!-- Sidebar -->
+    <div class="s-layout__sidebar">
+      <a class="s-sidebar__trigger" href="#">
+        <img src="./assets/images/logo.svg" />
+      </a>
+      <nav class="s-sidebar__nav">
+        <ul>
+          <li>
+            <a class="s-sidebar__nav-link " href="./my-account.html">
+              <img src="./assets/images/profile.svg" />
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="./networking.html">
+              <img src="./assets/images/networking.svg" />
+              <h2>Networking</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link active" href="./buymore.html">
+              <img src="./assets/images/invoice.svg" />
+              <h2>Invoices</h2>
+            </a>
+          </li>
+           <li>
+            <a class="s-sidebar__nav-link" href="./chat.html">
+              <img src="./assets/images/settings.svg" />
+              <h2>Chat</h2>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="./settings.html">
+              <img src="./assets/images/settings.svg" />
+              <h2>Settings</h2>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <main class="s-layout__content">
+     <div id="invoiceholder">
   <div id="invoice" class="effect2">
     
     <div id="invoice-top">
@@ -112,6 +157,11 @@
     </div><!--End InvoiceBot-->
   </div><!--End Invoice-->
 </div><!-- End Invoice Holder-->
+    </main>
+
+  
+  </div>
+  
 </body>
 
 </html>

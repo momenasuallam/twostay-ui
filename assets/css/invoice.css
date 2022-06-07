@@ -1,6 +1,215 @@
 body{
   background-color: #f5f5f5;
 }
+.s-layout {
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+   background-color: #f5f5f5;
+}
+
+.s-layout__content {
+  padding: 20px 0px;
+  width: 100%;
+}
+.s-sidebar__trigger {
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px;
+}
+
+.s-sidebar__trigger img {
+ width: 130px;
+}
+
+.s-sidebar__nav {
+   position: fixed;
+   top: 0;
+   left: -250px;
+   overflow: hidden;
+   transition: all .3s ease-in;
+   width: 250px;
+   height: 100%;
+   background: #FFFFFF;
+  color: #1F2A39;
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+   left: 0;
+}
+
+.s-sidebar__nav ul {
+  position: absolute;
+    top: 92px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+        display: block;
+    width: 100%;
+}
+
+.s-sidebar__nav ul li {
+   width: 100%;
+}
+
+.s-sidebar__nav-link {
+      position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 20px;
+    text-decoration: none;
+}
+.s-sidebar__nav .active{
+    background: #D2F4C9;
+}
+
+.s-sidebar__nav-link h2 {
+  font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #1F2A39;
+    display: block;
+    padding-left: 8px;
+    margin-bottom: 0px;
+}
+
+.s-sidebar__nav-link:hover {
+   background: #D2F4C9;
+}
+
+.s-sidebar__nav-link img {
+  width: 17px;
+    display: block;
+}
+
+/* sideprofile */
+.sideprofile{
+    background: #FFFFFF;
+    width: 300px;
+    min-height: 100vh;
+    padding: 60px 15px 20px;
+    position: fixed;
+    right: 0;
+    top: 0px;
+}
+.sideprofile h2{
+    font-weight: 700;
+font-size: 20px;
+letter-spacing: 0.5px;
+color: #1F2A39;
+}
+.avatardetails{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 30px;
+}
+.profileinfo{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.avaterimg{
+margin-right: 10px;
+}
+.avaterimg img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+.metainfo div{
+display: flex;
+}
+.metainfo h3{
+font-weight: 500;
+font-size: 13px;
+line-height: 17px;
+letter-spacing: 0.5px;
+color: #1F2A39;
+margin-bottom: 0px;
+}
+.metainfo img{
+width: 10px;
+margin-right: 2px;
+}
+.metainfo span{
+font-weight: 400;
+font-size: 10px;
+letter-spacing: 0.5px;
+color: #C8D4E9;
+}
+.metainfo h6{
+font-weight: 400;
+font-size: 11px;
+letter-spacing: 0.5px;
+color: #58A4A6;
+margin-bottom: 0px;
+}
+
+.btnprioutline{
+    border: 2px solid #304857;
+border-radius: 2px;
+padding: 5px 15px;
+font-weight: 700;
+font-size: 12px;
+text-align: center;
+letter-spacing: 0.5px;
+color: #304857;
+}
+@media(max-width:880px){
+    .sideprofile {
+    width: 175px;
+    padding: 45px 15px 20px;
+}
+.sideprofile h2 {
+    font-size: 15px;
+}
+  
+   .avatardetails {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profileinfo {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.chatbtn{
+    margin: 10px auto;
+}
+.profiledetails h2{
+    font-size: 18px !important;
+}
+}
+@media (min-width: 768px) {
+   .s-layout__content {
+      margin-left: 250px;
+   }
+   .s-sidebar__nav {
+      left: 0;
+   }
+}
+@media(max-width:768px)
+{
+    .s-sidebar__trigger {
+        background-color: white;
+    }
+    .s-layout__content{
+        padding-top: 90px;
+    }
+    .sideprofile{
+        display: none;
+    }
+}
 /* ::selection {background: #f31544; color: #FFF;}
 ::moz-selection {background: #f31544; color: #FFF;} */
 .clearfix::after {
@@ -19,25 +228,25 @@ a{
 .col-right {
     float: right;
 }
-h1{
+#invoice h1{
   font-size: 1.5em;
   color: #444;
   font-weight: 600;
 }
-h2{font-size: 16px;
+#invoice h2{font-size: 16px;
   font-weight: 500;
 }
-h3{
+#invoice h3{
   font-size: 1.2em;
   font-weight: 300;
   line-height: 2em;
 }
-p{
+#invoice p{
   font-size: .75em;
   color: #666;
   line-height: 1.2em;
 }
-a {
+#invoice a {
     text-decoration: none;
     color: #00a63f;
 }
@@ -96,11 +305,11 @@ a {
 }
 .title p{text-align: right;}
 #message{margin-bottom: 30px; display: block;}
- h2{
+ #invoice h2{
     font-size: 18px !important;
     margin-bottom: 0px !important;
 }
-h2 {
+#invoice h2 {
     color: #000 !important;
 }
 .col-right td {
@@ -214,7 +423,7 @@ th {
   left: auto;
 }
 @media screen and (max-width: 767px) {
-    h1 {
+    #invoice h1 {
         font-size: .9em;
     }
     #invoice {
